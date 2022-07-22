@@ -11,18 +11,6 @@ class GetScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: IconButton(
-            onPressed: () {
-              control.fetch(isFirstPage: true);
-            },
-            icon: const Icon(Icons.add)),
-        actions: [
-          IconButton(
-              onPressed: () {
-                control.fetch();
-              },
-              icon: const Icon(Icons.search)),
-        ],
       ),
       body: Column(
         children: [
