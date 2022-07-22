@@ -38,7 +38,17 @@ class GetScreen extends StatelessWidget {
                     itemCount: control.list.length),
               );
             },
+          ),
+          MaterialButton(
+            height: 45,
+            minWidth: double.infinity,
+            color: Colors.teal,
+            onPressed: () {
+              control.fetch();
+            },
+            child: Text('Load More'),
           )
+
         ],
       ),
     );
